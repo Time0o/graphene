@@ -518,7 +518,7 @@ using the SGX sealing key based on the MRENCLAVE identity of the enclave; they
 are useful to allow only the same enclave (on the same platform) to unseal
 files. ``sgx.protected_mrsigner_files`` are encrypted using the SGX sealing key
 based on the MRSIGNER identity of the enclave; they are useful to allow all
-enclaves from the same signer (but on the same platform) to unseal files.
+enclaves signed with the same key (and on the same platform) to unseal files.
 
 File check policy
 ^^^^^^^^^^^^^^^^^

@@ -725,8 +725,8 @@ class TC_40_FileSystem(RegressionTestCase):
             self.assertIn(f'{node}/hugepages/hugepages-2048kB/nr_hugepages: file', lines)
             self.assertIn(f'{node}/hugepages/hugepages-1048576kB/nr_hugepages: file', lines)
 
-    def test_060_protected_file(self):
-        pf_path = 'protected_file.dat'
+    def test_060_sealed_file(self):
+        pf_path = 'sealed_file.dat'
         if os.path.exists(pf_path):
             os.remove(pf_path)
 
